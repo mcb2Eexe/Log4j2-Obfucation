@@ -20,7 +20,7 @@ ${${::-j}${${::-n}${${::-d}${${::-i}:${::-l}${${::-d}${${::-a}${${::-p}://${host
 
 # Regex
 
-# Pattern match to capture all of above
+Pattern match to capture all of above
 
 ```
 
